@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Animalândia Pet Shop e Banho e Tosa | Bom Pastor, Belford Roxo</title>
+<meta name="description" content="Pet shop, banho e tosa para cães e gatos no Bom Pastor, Belford Roxo - RJ. Nota 5,0 no Google. Agende pelo WhatsApp (21) 98256-6383.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+  --bg:#f3f8fb; --surface:#ffffff; --text:#14303f; --muted:#4f6877;
+  --brand:#0a7ea4; --brand-ink:#ffffff; --accent:#ffb627; --accent-ink:#2a1d00;
+  --line:#d3e3ec; --hero:#0a5a78; --hero-ink:#ffffff; --wa:#1faa59;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0e1c24; --surface:#152833; --text:#e8f2f7; --muted:#9db6c4;
+    --brand:#4cc3ea; --brand-ink:#05222d; --accent:#ffb627; --accent-ink:#2a1d00;
+    --line:#26414f; --hero:#0b2f40; --hero-ink:#ffffff; --wa:#27c26a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0e1c24; --surface:#152833; --text:#e8f2f7; --muted:#9db6c4;
+  --brand:#4cc3ea; --brand-ink:#05222d; --accent:#ffb627; --accent-ink:#2a1d00;
+  --line:#26414f; --hero:#0b2f40; --hero-ink:#ffffff; --wa:#27c26a;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.6}
+h1,h2,h3{font-family:'Baloo 2','Trebuchet MS',system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);font-weight:800}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 28px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:21}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;max-width:1040px;margin:0 auto}
+.logo{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:1.25rem;text-decoration:none;color:var(--brand)}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--wa);color:#fff;border:0}
+.btn.alt{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent;border:2px solid currentColor}
+
+.hero{background:var(--hero);color:var(--hero-ink);padding:64px 0 72px}
+.hero .grid{display:grid;gap:32px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,7vw,3.8rem);font-weight:800}
+.hero p{font-size:1.15rem;max-width:46ch;opacity:.95}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);padding:8px 16px;border-radius:999px;font-weight:700;margin-bottom:18px}
+.paws{font-size:clamp(5rem,22vw,10rem);text-align:center;line-height:1}
+
+.cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card h3{font-size:1.3rem}
+.card p{margin:0;color:var(--muted)}
+.card .ico{font-size:2rem;display:block;margin-bottom:8px}
+
+.why{background:var(--surface);border-block:1px solid var(--line)}
+.why ul{list-style:none;padding:0;margin:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.why li{padding-left:34px;position:relative}
+.why li::before{content:"🐾";position:absolute;left:0;top:0}
+.why strong{display:block}
+
+.hours{display:grid;gap:28px}
+.table-scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--surface);border-radius:14px;overflow:hidden}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line)}
+td:last-child{font-weight:700}
+tr.today td{background:var(--accent);color:var(--accent-ink)}
+.note{background:var(--surface);border-left:6px solid var(--accent);padding:18px 20px;border-radius:12px}
+
+.steps{display:grid;gap:16px;counter-reset:s;padding:0;list-style:none;margin:0;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 20px 64px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:18px;top:18px;width:32px;height:32px;border-radius:50%;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center;font-weight:800}
+
+.map-card{display:grid;gap:12px}
+footer{background:var(--hero);color:var(--hero-ink);padding:36px 0;text-align:center}
+footer a{color:var(--hero-ink)}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+
+@media(min-width:800px){
+  .hero .grid{grid-template-columns:1.4fr 1fr}
+  .hours{grid-template-columns:1fr 1fr;align-items:start}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="nav">
+    <a class="logo" href="#inicio">🐾 Animalândia</a>
+    <a class="btn" href="https://wa.me/5521982566383?text=Ol%C3%A1!%20Quero%20agendar%20um%20banho%20ou%20tosa." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+  </div>
+</header>
+
+<main id="inicio">
+<div class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="badge">⭐ 5,0 de 5 · 34 avaliações no Google</span>
+      <h1>Banho, tosa e carinho para o seu pet</h1>
+      <p>Pet shop de confiança no Bom Pastor, em Belford Roxo. Cuidamos de cães e gatos com atenção a cada detalhe.</p>
+      <div class="cta-row">
+        <a class="btn" href="https://wa.me/5521982566383?text=Ol%C3%A1!%20Quero%20agendar%20um%20banho%20ou%20tosa." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+        <a class="btn ghost" href="#horarios">Ver horários</a>
+      </div>
+    </div>
+    <div class="paws" aria-hidden="true">🐶🐱</div>
+  </div>
+</div>
+
+<section id="servicos">
+  <div class="wrap">
+    <h2>O que fazemos pelo seu pet</h2>
+    <p class="lead">Tudo o que cães e gatos precisam, em um só lugar perto de você.</p>
+    <div class="cards">
+      <div class="card"><span class="ico" aria-hidden="true">🛁</span><h3>Banho</h3><p>Banho com produtos adequados ao tipo de pelo e à pele do seu pet, feito com calma e cuidado.</p></div>
+      <div class="card"><span class="ico" aria-hidden="true">✂️</span><h3>Tosa</h3><p>Tosa higiênica, tosa na máquina ou na tesoura, de acordo com a raça e a sua preferência.</p></div>
+      <div class="card"><span class="ico" aria-hidden="true">🛍️</span><h3>Pet shop</h3><p>Produtos e acessórios para o dia a dia de cães e gatos. Pergunte pelo WhatsApp o que temos.</p></div>
+      <div class="card"><span class="ico" aria-hidden="true">🐱</span><h3>Gatos também</h3><p>Manejo tranquilo e respeitoso para gatos, com o tempo que cada bichano precisa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="diferenciais">
+  <div class="wrap">
+    <h2>Por que os tutores confiam na Animalândia</h2>
+    <ul>
+      <li><strong>Nota 5,0 no Google</strong>Avaliação máxima de quem já deixou seu pet com a gente.</li>
+      <li><strong>Atendimento próximo</strong>Você conversa direto com a equipe e acompanha tudo pelo WhatsApp.</li>
+      <li><strong>No seu bairro</strong>Estamos no Bom Pastor, fácil para quem mora em Belford Roxo e arredores.</li>
+      <li><strong>Cuidado em cada detalhe</strong>Respeitamos o ritmo e o comportamento de cada animal.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="agendamento">
+  <div class="wrap">
+    <h2>Como agendar</h2>
+    <p class="lead">Rápido e sem complicação.</p>
+    <ol class="steps">
+      <li>Chame no WhatsApp <strong>(21) 98256-6383</strong>.</li>
+      <li>Informe nome, espécie, raça, porte e o serviço desejado.</li>
+      <li>Escolha o dia e o horário disponíveis.</li>
+      <li>Traga seu pet no horário combinado e receba a confirmação.</li>
+    </ol>
+    <div class="note" style="margin-top:24px">
+      <strong>Dica:</strong> agende com antecedência e chegue dentro do horário de funcionamento para garantir o atendimento antes do fechamento.
+    </div>
+  </div>
+</section>
+
+<section id="horarios" style="background:var(--surface);border-block:1px solid var(--line)">
+  <div class="wrap hours">
+    <div>
+      <h2>Horário de funcionamento</h2>
+      <div class="table-scroll">
+        <table id="tabela">
+          <tbody>
+            <tr data-d="1"><th scope="row">Segunda</th><td>8h às 18h</td></tr>
+            <tr data-d="2"><th scope="row">Terça</th><td>8h às 19h</td></tr>
+            <tr data-d="3"><th scope="row">Quarta</th><td>8h às 19h</td></tr>
+            <tr data-d="4"><th scope="row">Quinta</th><td>8h às 18h</td></tr>
+            <tr data-d="5"><th scope="row">Sexta</th><td>8h às 19h</td></tr>
+            <tr data-d="6"><th scope="row">Sábado</th><td>8h às 16h</td></tr>
+            <tr data-d="0"><th scope="row">Domingo</th><td>Fechado</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="map-card">
+      <h2>Onde estamos</h2>
+      <p class="lead" style="margin:0">Estr. Belford Roxo, 600 - Loja<br>Bom Pastor, Belford Roxo - RJ<br>CEP 26110-260</p>
+      <div class="cta-row">
+        <a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Estr.+Belford+Roxo,+600,+Bom+Pastor,+Belford+Roxo+-+RJ,+26110-260" target="_blank" rel="noopener">Abrir no mapa</a>
+        <a class="btn" href="tel:+5521982566383">Ligar agora</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Animalândia Pet Shop e Banho e Tosa</strong></p>
+    <p>Estr. Belford Roxo, 600 - Loja - Bom Pastor, Belford Roxo - RJ · <a href="tel:+5521982566383">(21) 98256-6383</a></p>
+    <p style="opacity:.75;font-size:.9rem">Fechamos aos domingos.</p>
+  </div>
+</footer>
+
+<a class="btn fab" href="https://wa.me/5521982566383?text=Ol%C3%A1!%20Quero%20agendar%20um%20banho%20ou%20tosa." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">💬 WhatsApp</a>
+
+<script>
+(function(){
+  var d = new Date().getDay();
+  var r = document.querySelector('#tabela tr[data-d="'+d+'"]');
+  if(r) r.className = 'today';
+})();
+</script>
+</body>
+</html>
